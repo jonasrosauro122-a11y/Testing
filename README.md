@@ -1,56 +1,53 @@
-# Holistic EP Lead & Follow-Up Tracker
+# Holistic EP Command Center Demo
 
-A Phase 1.1 internal web app concept for Holistic Exercise Physiology to track leads, urgent emails, follow-ups, bookings, and EA daily tasks.
+A polished Phase 1 static web app demo for **Holistic Exercise Physiology** lead movement, urgent emails, follow-up reminders, and Executive Assistant daily task planning.
 
-## What was fixed/improved
+## What is included
 
-- Better localStorage safety and migration from the first demo version
-- Smoother filtering and clearer filters by owner, service, priority, and status
-- Daily EA Command Center on the dashboard
-- Daily summary generator for quick updates to Hassan and Jason
+- Client-ready login/demo screen
+- Role views for Admin, Hassan, Jason, and Executive Assistant
+- Executive Command Center dashboard
+- Lead Pipeline with stage movement
+- Urgent Email Tracker
+- Follow-Up Reminders board
+- EA Task Planner
+- Executive Reports with visual summaries
+- Demo Settings page
 - CSV export for leads and urgent emails
-- Validation for important forms, including Closed/Lost reason and follow-up date requirements
-- Stronger urgent/critical visual indicators
-- Improved reports page and task planner filtering
-- Netlify files added: `_redirects` and `netlify.toml`
-- Mobile and responsive layout polish
+- Daily EA summary generator for Hassan and Jason
+- Responsive design for desktop, tablet, and mobile
+- LocalStorage persistence for demo data
 
-## Features
+## Important privacy note
 
-- Demo login roles: Admin, Hassan, Jason, Executive Assistant
-- Daily EA dashboard with operational priorities
-- Lead pipeline board from New Lead to Closed/Lost
-- Urgent email tracker with urgency levels
-- Follow-up reminders with overdue/due today visibility
-- EA task planner
-- Reports page with visual summaries and CSV export
-- Settings page for service categories, lead stages, users, and more
-- localStorage persistence
-- Responsive layout for desktop, tablet, and mobile
+This is a static Phase 1 demo. It uses browser LocalStorage only. Do not enter real patient, NDIS, referral, health, or personally identifiable information until the app is connected to a secure backend with authentication, permissions, audit logs, and privacy safeguards.
 
-## Important
+## How to open locally
 
-This Phase 1 version uses browser localStorage only. Do not store real client, patient, referral, medical, NDIS, or other sensitive information in this demo. For live business use, connect this to a secure backend with authentication, permissions, encryption, and privacy-compliant data handling.
+Open `index.html` in your browser.
 
-## How to Run
+## How to deploy to Netlify
 
-Open `index.html` directly in a browser.
+1. Upload the full folder to GitHub or drag the folder contents into Netlify.
+2. Build command: leave blank.
+3. Publish directory: project root.
+4. Netlify will serve the static files directly.
 
-## Deploy to Netlify
+## Files
 
-Option 1: Drag-and-drop this folder into Netlify.
+- `index.html` — app shell
+- `styles.css` — full professional UI styling
+- `app.js` — data model, demo data, UI rendering, CRUD actions, filters, reports
+- `_redirects` — Netlify redirect fallback
+- `netlify.toml` — basic Netlify configuration and headers
 
-Option 2: Upload to GitHub and connect the repository to Netlify.
+## Demo positioning
 
-Build command: leave blank
-Publish directory: project root or `/`
+Use this demo to show the client how a simple internal system can help Hassan, Jason, and the Executive Assistant:
 
-## Suggested Next Phase
-
-- Add secure authentication
-- Add backend database such as Supabase
-- Add Gmail integration for real urgent email syncing
-- Add Google Calendar or Halaxy booking integration
-- Add role-based permissions
-- Add audit trail
-- Add CSV import
+- Reduce missed enquiries
+- Track lead movement clearly
+- Prioritise urgent emails
+- Keep warm leads active
+- Assign ownership
+- Create daily visibility over bookings and follow-ups
